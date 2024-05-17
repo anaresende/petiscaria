@@ -38,7 +38,7 @@ export default function Home() {
           Contactos
         </Link>
       </nav>
-      <header className="hero-background w-full h-screen bg-cover bg-center flex items-center justify-center px-4 lg:px-6 relative">
+      <header className="hero-background w-full h-dvh bg-cover bg-center flex items-center justify-center px-4 lg:px-6 relative">
         <div className="text-center gap-8 flex flex-col">
           <Link className="flex items-center justify-center" href="#">
             <span className="sr-only">Petiscaria da Esquina</span>
