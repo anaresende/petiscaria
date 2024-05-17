@@ -69,11 +69,7 @@ export default function Home() {
           nunca se atrasa.
         </p>
       </header>
-      <section
-        id="menu"
-        className="w-full py-12 md:py-24 lg:py-32 bg-white"
-        id="menu"
-      >
+      <section id="menu" className="w-full py-12 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
