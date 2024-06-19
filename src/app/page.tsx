@@ -8,7 +8,7 @@ import {
   Carousel,
 } from "@/components/ui/carousel";
 
-import ImagePetiscariaHero from "../images/petiscaria-hero.jpeg";
+import ImagePetiscariaHero from "../images/petiscaria-hero.svg";
 import ImagePetiscariaFounders from "../images/founders.jpg";
 import ImagePetiscariaContacts from "../images/contacts.jpg";
 import ImagePetiscaria1 from "../images/petiscaria-1.jpeg";
@@ -43,9 +43,14 @@ export default function Home() {
           <Link className="flex items-center justify-center" href="#">
             <span className="sr-only">Petiscaria da Esquina</span>
           </Link>
-          <h1 className="text-4xl text-secondary font-bold tracking-tighter sm:text-5xl md:text-6xl">
-            Petiscaria da Esquina
-          </h1>
+          <Image
+            alt="logo Na Esquina"
+            className="object-cover object-[center_24%] rounded-md"
+            height={500}
+            src={ImagePetiscariaHero}
+            width={800}
+          />
+
           <div className="space-y-4">
             <div>
               <Link
