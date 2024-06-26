@@ -23,7 +23,7 @@ export const metadata: Metadata = {
       "Mais que um local para petiscar, este é um refúgio onde a tradição encontra a modernidade em cada detalhe. Um espaço onde cada prato conta uma história e cada recanto abraça com calor e familiaridade.",
     images: [
       {
-        url: "/seo.jpg",
+        url: "https://www.naesquina.pt/seo.jpg",
         alt: "Na Esquina – Petiscaria",
       },
     ],

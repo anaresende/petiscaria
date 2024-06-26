@@ -84,14 +84,14 @@ export default function Home() {
       </header>
       <section id="menu" className="w-full py-12 lg:py-24 bg-white">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          {/* <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-primary text-3xl font-bold tracking-tighter sm:text-5xl">
-                Os nossos petiscos
+                A nossa Carta
               </h2>
             </div>
-          </div>
-          <div className="mt-16">
+          </div> */}
+          <div>
             <div className="container-masonry">
               <figure>
                 <Image
