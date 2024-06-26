@@ -114,3 +114,49 @@ html {
   object-fit: cover;
   z-index: -1;
 }
+
+.container-masonry {
+  column-count: 4;
+  gap: 8px;
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 8px;
+    break-inside: avoid;
+  }
+
+  figure > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+  }
+
+  figure a {
+    color: black;
+    text-decoration: none;
+  }
+
+  figcaption {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.2em 0.5em;
+    justify-self: start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-masonry {
+    column-count: 2;
+
+    figure:nth-child(n + 7) {
+      display: none;
+    }
+  }
+}

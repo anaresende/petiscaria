@@ -8,12 +8,19 @@ import {
   Carousel,
 } from "@/components/ui/carousel";
 
-import ImagePetiscariaHero from "../images/petiscaria-hero.svg";
+import ImagePetiscariaHero from "../images/petiscaria-hero.png";
 import ImagePetiscariaFounders from "../images/founders.jpg";
 import ImagePetiscariaContacts from "../images/contacts.jpg";
-import ImagePetiscaria1 from "../images/petiscaria-1.jpeg";
-import ImagePetiscaria2 from "../images/petiscaria-2.jpeg";
-import ImagePetiscaria3 from "../images/petiscaria-3.jpeg";
+import ImageMasonry1 from "../images/masonry/masonry1.jpg";
+import ImageMasonry2 from "../images/masonry/masonry2.jpg";
+import ImageMasonry3 from "../images/masonry/masonry3.jpg";
+import ImageMasonry4 from "../images/masonry/masonry4.jpg";
+import ImageMasonry5 from "../images/masonry/masonry5.jpg";
+import ImageMasonry6 from "../images/masonry/masonry6.jpg";
+import ImageMasonry7 from "../images/masonry/masonry7.jpg";
+import ImageMasonry8 from "../images/masonry/masonry8.jpg";
+import ImageMasonry9 from "../images/masonry/masonry9.jpg";
+import ImageMasonry10 from "../images/masonry/masonry10.jpg";
 
 export default function Home() {
   return (
@@ -40,21 +47,18 @@ export default function Home() {
       </nav>
       <header className="hero-background w-full h-dvh bg-cover bg-center flex items-center justify-center px-4 lg:px-6 relative">
         <div className="text-center gap-8 flex flex-col">
-          <Link className="flex items-center justify-center" href="#">
-            <span className="sr-only">Petiscaria da Esquina</span>
-          </Link>
           <Image
             alt="logo Na Esquina"
             className="object-cover object-[center_24%] rounded-md"
             height={500}
             src={ImagePetiscariaHero}
-            width={800}
+            width={600}
           />
 
           <div className="space-y-4">
             <div>
               <Link
-                className="inline-flex h-10 items-center justify-center text-primary rounded-md bg-secondary px-8 text-sm font-medium shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50 dark:bg-[#404000] dark:text-white dark:hover:bg-[#404000]/90 dark:focus-visible:ring-[#404000]"
+                className="inline-flex h-10 items-center justify-center text-primary bg-secondary px-8 text-sm font-medium shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50 dark:bg-[#404000] dark:text-white dark:hover:bg-[#404000]/90 dark:focus-visible:ring-[#404000]"
                 href="tel:936 746 342"
               >
                 Reservar uma mesa
@@ -62,7 +66,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <p className="max-w-[700px] mx-auto text-secondary md:text-xl absolute bottom-[6%] right-[6%]">
+        <p className="max-w-[700px] mx-auto text-secondary md:text-xl absolute bottom-[6%] right-[6%] font-semibold">
           Na Esquina
           <br />
           onde os petiscos
@@ -74,7 +78,7 @@ export default function Home() {
           nunca se atrasa.
         </p>
       </header>
-      <section id="menu" className="w-full py-12 md:py-24 lg:py-32 bg-white">
+      <section id="menu" className="w-full py-12 lg:py-24 bg-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -83,45 +87,105 @@ export default function Home() {
               </h2>
             </div>
           </div>
-          <div className="mt-8">
-            <Carousel
-              opts={{
-                loop: true,
-              }}
-              className="max-w-4xl mx-auto"
-            >
-              <CarouselContent>
-                <CarouselItem>
-                  <Image
-                    alt="Menu Item 2"
-                    className="aspect-video object-cover rounded-md"
-                    height={550}
-                    src={ImagePetiscaria1}
-                    width={900}
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    alt="Menu Item 3"
-                    className="aspect-video object-cover object-[center_74%] rounded-md"
-                    height={550}
-                    src={ImagePetiscaria2}
-                    width={900}
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    alt="Menu Item 3"
-                    className="aspect-video object-cover object-[center_64%] rounded-md"
-                    height={550}
-                    src={ImagePetiscaria3}
-                    width={900}
-                  />
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious className="hidden md:flex" />
-              <CarouselNext className="hidden md:flex" />
-            </Carousel>
+          <div className="mt-16">
+            <div className="container-masonry">
+              <figure>
+                <Image
+                  width={400}
+                  height={300}
+                  src={ImageMasonry2}
+                  alt="A windmill"
+                />
+              </figure>
+              <figure>
+                <Image
+                  width={400}
+                  height={300}
+                  src={ImageMasonry1}
+                  alt="The Clifton Suspension Bridge"
+                />
+              </figure>
+              <figure>
+                <Image
+                  width={400}
+                  height={300}
+                  src={ImageMasonry4}
+                  alt="Sunset and boats"
+                />
+              </figure>
+              <figure>
+                <Image
+                  width={400}
+                  height={300}
+                  src={ImageMasonry4}
+                  alt="a river in the snow"
+                />
+              </figure>
+              <figure>
+                <Image
+                  width={400}
+                  height={300}
+                  src={ImageMasonry5}
+                  alt="a single checked balloon"
+                />
+              </figure>
+              <figure>
+                <Image
+                  width={400}
+                  height={300}
+                  src={ImageMasonry6}
+                  alt="a hot air balloon shaped like a dog"
+                />
+              </figure>
+              <figure>
+                <Image
+                  width={400}
+                  height={300}
+                  src={ImageMasonry7}
+                  alt="View from a hot air balloon of other balloons"
+                />
+              </figure>
+              <figure>
+                <Image
+                  width={400}
+                  height={300}
+                  src={ImageMasonry9}
+                  alt="a balloon fairground ride"
+                />
+              </figure>
+              <figure>
+                <Image
+                  width={400}
+                  height={300}
+                  src={ImageMasonry10}
+                  alt="sunrise over a harbor"
+                />
+              </figure>
+              <figure>
+                <Image
+                  width={400}
+                  height={300}
+                  src={ImageMasonry4}
+                  alt="three hot air balloons in a blue sky"
+                />
+              </figure>
+              <figure>
+                <Image
+                  width={400}
+                  height={300}
+                  src={ImageMasonry4}
+                  alt="the Toronto light up sign at night"
+                />
+              </figure>
+              <figure>
+                <Image
+                  width={400}
+                  height={300}
+                  src={ImageMasonry8}
+                  alt="the Toronto light up sign at night"
+                />
+              </figure>
+            </div>
           </div>
         </div>
       </section>
@@ -195,16 +259,20 @@ export default function Home() {
         </div>
       </section>
       <footer className="flex justify-between gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-primary text-secondary">
-        <p className="text-xs text-secondary">2024 © Petiscaria da Esquina</p>
+        <p className="text-xs text-secondary">
+          {new Date().getFullYear()} © Na Esquina Petiscaria
+        </p>
         <div className="flex justify-end space-x-4">
           <Link
+            target="_blank"
             className="text-secondary cursor-pointer hover:text-secondary-foreground dark:text-gray-400 dark:hover:text-gray-50"
-            href="https://www.facebook.com/petiscariadaesquina24/"
+            href="https://www.facebook.com/naesquinapetiscaria/"
           >
             <FacebookIcon className="h-6 w-6" />
             <span className="sr-only">Facebook</span>
           </Link>
           <Link
+            target="_blank"
             className="text-secondary cursor-pointer hover:text-secondary-foreground dark:text-gray-400 dark:hover:text-gray-50"
             href="https://www.instagram.com/naesquina_petiscaria/"
           >
@@ -212,6 +280,7 @@ export default function Home() {
             <span className="sr-only">Instagram</span>
           </Link>
           <Link
+            target="_blank"
             className="text-secondary cursor-pointer hover:text-secondary-foreground dark:text-gray-400 dark:hover:text-gray-50"
             href="tel:936746342"
           >

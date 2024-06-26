@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Petiscaria da Esquina",
+  title: "Na Esquina – Petiscaria",
   description:
     "Mais que um local para petiscar, este é um refúgio onde a tradição encontra a modernidade em cada detalhe. Um espaço onde cada prato conta uma história e cada recanto abraça com calor e familiaridade.",
   authors: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     { url: "http://github.com/nlfonseca", name: "Nelson Fonseca" },
   ],
   keywords:
-    "petiscaria, esquina, petiscos, santa maria da feira, são joão da madeira, moelas, prego, rojoes, camaroes, ameijoas, familia, restaurante, tasco, tasquinha, esplanada, tabua, tabuas, asinhas de frango, chicken wings, heineken, tostas, finos, sangria",
+    "petiscaria, esquina, petiscos, santa maria da feira, são joão da madeira, moelas, prego, rojoes, camaroes, ameijoas, familia, restaurante, tasco, tasquinha, esplanada, tabua, tabuas, asinhas de frango, chicken wings, heineken, tostas, finos, sangria, tosta bacalhau, bacalhau, polvo",
 };
 
 export default function RootLayout({
