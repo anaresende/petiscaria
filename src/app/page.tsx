@@ -63,7 +63,7 @@ export default function Home() {
             <div>
               <Link
                 className="inline-flex h-10 items-center justify-center text-primary bg-secondary px-8 text-sm font-medium shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50 dark:bg-[#404000] dark:text-white dark:hover:bg-[#404000]/90 dark:focus-visible:ring-[#404000]"
-                href="tel:936 746 342"
+                href="tel:936746342"
               >
                 Reservar uma mesa
               </Link>
@@ -247,7 +247,7 @@ export default function Home() {
               </div>
               <p>
                 <strong>Contacto</strong>
-                <a className="block" href="tel:936 746 342">
+                <a className="block" href="tel:936746342">
                   936 746 342
                 </a>
               </p>
