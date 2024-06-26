@@ -21,6 +21,10 @@ import ImageMasonry7 from "../images/masonry/masonry7.jpg";
 import ImageMasonry8 from "../images/masonry/masonry8.jpg";
 import ImageMasonry9 from "../images/masonry/masonry9.jpg";
 import ImageMasonry10 from "../images/masonry/masonry10.jpg";
+import ImageMasonry12 from "../images/masonry/masonry12.jpg";
+import ImageMasonry13 from "../images/masonry/masonry13.jpg";
+import ImageMasonry14 from "../images/masonry/masonry14.jpg";
+import ImageMasonry15 from "../images/masonry/masonry15.jpg";
 
 export default function Home() {
   return (
@@ -109,7 +113,7 @@ export default function Home() {
                 <Image
                   width={400}
                   height={300}
-                  src={ImageMasonry4}
+                  src={ImageMasonry15}
                   alt="Sunset and boats"
                 />
               </figure>
@@ -117,7 +121,7 @@ export default function Home() {
                 <Image
                   width={400}
                   height={300}
-                  src={ImageMasonry4}
+                  src={ImageMasonry14}
                   alt="a river in the snow"
                 />
               </figure>
@@ -165,7 +169,7 @@ export default function Home() {
                 <Image
                   width={400}
                   height={300}
-                  src={ImageMasonry4}
+                  src={ImageMasonry13}
                   alt="three hot air balloons in a blue sky"
                 />
               </figure>
@@ -173,7 +177,7 @@ export default function Home() {
                 <Image
                   width={400}
                   height={300}
-                  src={ImageMasonry4}
+                  src={ImageMasonry12}
                   alt="the Toronto light up sign at night"
                 />
               </figure>
