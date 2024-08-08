@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Na Esquina – Petiscaria",
+  applicationName: "Na Esquina – Petiscaria",
   description:
     "Mais que um local para petiscar, este é um refúgio onde a tradição encontra a modernidade em cada detalhe. Um espaço onde cada prato conta uma história e cada recanto abraça com calor e familiaridade.",
   authors: [
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     { url: "http://github.com/nlfonseca", name: "Nelson Fonseca" },
   ],
   keywords:
-    "petiscaria, esquina, petiscos, santa maria da feira, são joão da madeira, moelas, prego, rojoes, camaroes, ameijoas, familia, restaurante, tasco, tasquinha, esplanada, tabua, tabuas, asinhas de frango, chicken wings, heineken, tostas, finos, sangria, tosta bacalhau, bacalhau, polvo",
+    "petiscaria, esquina, na esquina, petiscos, santa maria da feira, são joão da madeira, moelas, prego, rojoes, camaroes, ameijoas, familia, restaurante, tasco, tasquinha, esplanada, tabua, tabuas, asinhas de frango, chicken wings, heineken, tostas, finos, sangria, tosta bacalhau, bacalhau, polvo, pregos, sandes, tábuas, mousse chocolate",
   openGraph: {
     type: "website",
     locale: "pt_PT",
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
     ],
     url: "https://naesquina.pt",
   },
+
   themeColor: "#385545",
 };
 
@@ -39,6 +41,34 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
+      <head>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png?v=0.2"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png?v=0.2"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png?v=0.2"
+        />
+        <link rel="manifest" href="/site.webmanifest?v=0.2" />
+        <link
+          rel="mask-icon"
+          href="/safari-pinned-tab.svg?v=0.2"
+          color="#385444"
+        />
+        <link rel="shortcut icon" href="/favicon.ico?v=0.2" />
+        <meta name="msapplication-TileColor" content="#385444" />
+        <meta name="theme-color" content="#ffffff" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
