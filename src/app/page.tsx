@@ -1,12 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  CarouselItem,
-  CarouselContent,
-  CarouselPrevious,
-  CarouselNext,
-  Carousel,
-} from "@/components/ui/carousel";
 
 import ImagePetiscariaHero from "../images/petiscaria-hero.png";
 import ImagePetiscariaFounders from "../images/founders.jpg";
