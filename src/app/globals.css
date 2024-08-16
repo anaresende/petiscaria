@@ -93,7 +93,7 @@ html {
 }
 
 .square-background {
-  --s: 40px; /* control the size of the grid */
+  --s: 30px; /* control the size of the grid */
   --t: 1px; /* the thickness */
 
   background: hsl(var(--secondary))

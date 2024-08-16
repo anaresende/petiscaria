@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Open_Sans } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const opensans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Na Esquina – Petiscaria",
@@ -30,7 +32,9 @@ export const metadata: Metadata = {
     ],
     url: "https://naesquina.pt",
   },
+};
 
+export const viewport: Viewport = {
   themeColor: "#385545",
 };
 
@@ -65,11 +69,12 @@ export default function RootLayout({
           href="/safari-pinned-tab.svg?v=0.2"
           color="#385444"
         />
-        <link rel="shortcut icon" href="/favicon.ico?v=0.2" />
+
         <meta name="msapplication-TileColor" content="#385444" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={opensans.className}>{children}</body>
+      <GoogleAnalytics gaId="G-4DMFGGRDM7" />
     </html>
   );
 }
